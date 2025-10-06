@@ -75,13 +75,13 @@
     if (!header) return;
     header.innerHTML = `
       <div class="header-inner">
-        <div class="brand"><a href="/index.html">DesignConnect</a></div>
+        <div class="brand"><a href="index.html">DesignConnect</a></div>
         <nav class="nav">
-          <a href="/index.html" ${active==='home'?'class="active"':''}>Home</a>
-          <a href="/network.html" ${active==='network'?'class="active"':''}>Network</a>
-          <a href="/mentorship.html" ${active==='mentorship'?'class="active"':''}>Mentorship</a>
-          <a href="/courses.html" ${active==='courses'?'class="active"':''}>Courses</a>
-          <a href="/jobs.html" ${active==='jobs'?'class="active"':''}>Jobs</a>
+          <a href="index.html" ${active==='home'?'class="active"':''}>Home</a>
+          <a href="network.html" ${active==='network'?'class="active"':''}>Network</a>
+          <a href="mentorship.html" ${active==='mentorship'?'class="active"':''}>Mentorship</a>
+          <a href="courses.html" ${active==='courses'?'class="active"':''}>Courses</a>
+          <a href="jobs.html" ${active==='jobs'?'class="active"':''}>Jobs</a>
         </nav>
         <div class="search">
           <span class="icon">🔍</span>
@@ -111,7 +111,7 @@
                 <div><strong>${seed.courses[0].title}</strong></div>
                 <div class="muted">by ${seed.courses[0].author}</div>
               </div>
-              <a class="btn" href="/courses.html">View</a>
+              <a class="btn" href="courses.html">View</a>
             </div>
           </div>
           <div class="card">
@@ -124,7 +124,7 @@
           <div class="card">
             <h3>Build your network</h3>
             <p class="muted">Connect with peers and mentors</p>
-            <a class="btn" href="/network.html">Open Network</a>
+            <a class="btn" href="network.html">Open Network</a>
           </div>
         </div>
       </section>
@@ -132,7 +132,7 @@
       <section class="section">
         <div class="space-between">
           <h2>Suggested Job Opportunities</h2>
-          <a class="btn small" href="/jobs.html">View all jobs</a>
+          <a class="btn small" href="jobs.html">View all jobs</a>
         </div>
         <div class="grid auto-fit-250">
           ${jobs.map(j=>`
@@ -154,7 +154,7 @@
       <section class="section">
         <div class="space-between">
           <h2>People you may know</h2>
-          <a class="btn small" href="/network.html">See all</a>
+          <a class="btn small" href="network.html">See all</a>
         </div>
         <div class="grid auto-fit-250">
           ${people.map(p=>`
@@ -170,7 +170,7 @@
                 <button class="btn small ${state.followedIds.has(p.id)?'primary':''}" data-follow="${p.id}">
                   ${state.followedIds.has(p.id)?'Following':'Follow'}
                 </button>
-                <a class="btn small" href="/mentorship.html">Ask for mentorship</a>
+                <a class="btn small" href="mentorship.html">Ask for mentorship</a>
               </div>
             </div>
           `).join('')}
